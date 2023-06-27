@@ -126,3 +126,13 @@ echo "######### Informacion del DNS  #########" >> $LOGFILE
 cat /etc/resolv.conf >> $LOGFILE
 echo "######### Informacion del archivo de Hosts  #########" >> $LOGFILE
 cat /etc/hosts >> $LOGFILE
+echo "######### Informacion puertos abiertos del sistema  #########" >> $LOGFILE
+ss -ltn >> $LOGFILE
+
+echo "###############################################" >> $LOGFILE
+echo "# INFORMACION DE USUARIOS ">> $LOGFILE
+echo "###############################################" >> $LOGFILE
+echo "######### Listado de usuarios  #########" >> $LOGFILE
+cat /etc/passwd >> $LOGFILE
+echo "######### Listado de grupos  #########" >> $LOGFILE
+cat /etc/group >> $LOGFILE
