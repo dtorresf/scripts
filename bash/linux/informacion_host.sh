@@ -127,7 +127,7 @@ cat /etc/resolv.conf >> $LOGFILE
 echo "######### Informacion del archivo de Hosts  #########" >> $LOGFILE
 cat /etc/hosts >> $LOGFILE
 echo "######### Informacion puertos abiertos del sistema  #########" >> $LOGFILE
-ss -ltn >> $LOGFILE
+ss -tulpn >> $LOGFILE
 
 echo "###############################################" >> $LOGFILE
 echo "# INFORMACION DE USUARIOS ">> $LOGFILE
